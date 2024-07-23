@@ -1,0 +1,62 @@
+@use "../util/" as *;
+
+.profile {
+  background-color: var(--grey800);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: rem(90);
+    border-radius: 50%;
+    margin-bottom: rem(30);
+
+    @include breakpoint(medium) {
+    }
+  }
+
+  h1 {
+    letter-spacing: 0.1rem;
+    margin-bottom: rem(16);
+  }
+
+  h2 {
+    font-size: rem(16);
+    color: var(--green);
+  }
+
+  p {
+    font-size: rem(14);
+  }
+
+  ul,
+  li {
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: rem(16);
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  li a {
+    border-radius: rem(10);
+    background-color: var(--grey700);
+    display: inline-block;
+    font-weight: 700;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  li a:hover {
+    background-color: var(--green);
+    color: var(--grey800);
+  }
+}

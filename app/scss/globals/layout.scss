@@ -1,5 +1,12 @@
 @use "../util/" as *;
 
 .container {
+  border-radius: rem(14);
   max-width: 384px;
+  padding: rem(25) rem(24);
+
+  @include breakpoint(medium) {
+    width: 384px;
+    padding: rem(41) rem(40);
+  }
 }
